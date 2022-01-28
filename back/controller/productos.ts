@@ -51,7 +51,7 @@ export const deleteProductos = async (req: Request, res: Response) => {
     if (!prod) {
       return res.status(400).json({
         ok: false,
-        msg: `No existe un usuarios con el id ${id}`,
+        msg: `No existe el producto con el id ${id}`,
       });
     }
 
@@ -79,7 +79,7 @@ export const putProducto = async (req: Request, res: Response) => {
     if (!prod) {
       return res.status(400).json({
         ok: false,
-        msg: `No existe un usuarios con el id ${id}`,
+        msg: `No existe el producto con el id ${id}`,
       });
     }
 
